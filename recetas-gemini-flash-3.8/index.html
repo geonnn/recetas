@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicias Caseras | Recetario de Cocina Artesanal</title>
+  
+  <!-- 
+    Tipografías externas provistas mediante Google Fonts:
+    - "Playfair Display": tipografía serif para títulos y encabezados de alta elegancia gastronómica.
+    - "Plus Jakarta Sans": tipografía sans-serif geométrica, cálida y de máxima legibilidad para textos y formularios.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Única hoja de estilos externa del proyecto según especificación -->
+  <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+
+  <!-- Barra de Navegación Principal (Visible en todo momento) -->
+  <header class="header-principal">
+    <nav class="nav-contenedor" aria-label="Navegación principal del sitio">
+      <a href="#inicio" class="logo-sitio">
+        <span class="logo-icono" aria-hidden="true">🍳</span>
+        <span class="logo-texto">Delicias Caseras</span>
+      </a>
+      
+      <ul class="nav-enlaces">
+        <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
+        <li><a href="#acerca-de" class="nav-link">Quién mantiene el sitio</a></li>
+        <li><a href="#contacto" class="nav-link nav-btn-contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <!-- Sección de Bienvenida / Hero Banner -->
+    <section class="hero-seccion" aria-labelledby="hero-titulo">
+      <div class="contenedor hero-contenido">
+        <span class="hero-etiqueta">Cocina tradicional explicada paso a paso</span>
+        <h1 id="hero-titulo" class="hero-titulo">El placer de cocinar en casa con amor y tradición</h1>
+        <p class="hero-descripcion">
+          Descubrí recetas caseras probadas, creadas con ingredientes cotidianos y explicaciones claras. Elegí tu categoría favorita y descargá cada ficha completa en formato PDF para tenerla siempre a mano en tu cocina.
+        </p>
+        <div class="hero-acciones">
+          <a href="#catalogo" class="btn-primario">Explorar Recetas</a>
+          <a href="#acerca-de" class="btn-secundario">Conocer a la Chef</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Catálogo de Recetas con Selector CSS-only Tabs -->
+    <section id="catalogo" class="catalogo-seccion" aria-labelledby="catalogo-titulo">
+      <div class="contenedor">
+        <div class="seccion-encabezado">
+          <span class="seccion-subtitulo-kicker">Nuestra Colección</span>
+          <h2 id="catalogo-titulo" class="seccion-titulo">Catálogo de Recetas</h2>
+          <p class="seccion-descripcion">
+            Seleccioná una categoría para explorar los platos salados o nuestras dulces tentaciones:
+          </p>
+        </div>
+
+        <!-- 
+          Técnica de interactividad CSS-only Tabs:
+          Radio buttons ocultos combinados con etiquetas <label> visibles y el selector :checked 
+          junto al combinador de hermanos subsiguientes (~) en estilosIA.css.
+          Sin una sola línea de JavaScript.
+        -->
+        <input type="radio" name="categoria" id="tab-salado" class="radio-tab" checked>
+        <input type="radio" name="categoria" id="tab-dulce" class="radio-tab">
+
+        <!-- Selector visual de categorías (Botones/Pestañas) -->
+        <div class="selector-categorias" role="tablist" aria-label="Categorías de recetas">
+          <label for="tab-salado" id="label-salado" class="tab-boton" role="tab" tabindex="0">
+            <span class="tab-icono" aria-hidden="true">🍲</span>
+            <span>Recetas Saladas (3)</span>
+          </label>
+          <label for="tab-dulce" id="label-dulce" class="tab-boton" role="tab" tabindex="0">
+            <span class="tab-icono" aria-hidden="true">🍰</span>
+            <span>Recetas Dulces (3)</span>
+          </label>
+        </div>
+
+        <!-- Contenedor central donde se muestran las tarjetas según la categoría activa -->
+        <div class="recetas-contenedor">
+          
+          <!-- Bloque de Recetas Saladas (Recetas 1, 2 y 3) -->
+          <div class="bloque-categoria bloque-salado" role="region" aria-labelledby="label-salado">
+            
+            <!-- Receta 1 -->
+            <article class="tarjeta-receta">
+              <div class="tarjeta-imagen-contenedor">
+                <img src="imágenes/receta1.png" alt="Plato recién servido de Risotto cremoso de hongos y parmesano" class="tarjeta-imagen" loading="lazy">
+                <span class="tarjeta-categoria-tag tag-salado">Salado</span>
+              </div>
+              <div class="tarjeta-cuerpo">
+                <div class="tarjeta-meta">
+                  <span>⏱️ 40 min</span>
+                  <span>👥 4 porciones</span>
+                </div>
+                <h3 class="tarjeta-titulo">Risotto Cremoso de Hongos y Parmesano</h3>
+                <p class="tarjeta-descripcion">
+                  Arroz arborio al dente con sofrito de hongos frescos y secos hidratados, vino blanco seco y una mantecatura final con manteca fría y parmesano que logra una cremosidad irresistible.
+                </p>
+                <div class="tarjeta-pie">
+                  <a href="recetarios/receta1.pdf" class="btn-descarga" download="receta1.pdf">
+                    <span class="icono-descarga" aria-hidden="true">📄</span>
+                    Descargar Ficha en PDF
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Receta 2 -->
+            <article class="tarjeta-receta">
+              <div class="tarjeta-imagen-contenedor">
+                <img src="imágenes/receta2.png" alt="Porción recién horneada de lasaña boloñesa clásica gratinada con queso" class="tarjeta-imagen" loading="lazy">
+                <span class="tarjeta-categoria-tag tag-salado">Salado</span>
+              </div>
+              <div class="tarjeta-cuerpo">
+                <div class="tarjeta-meta">
+                  <span>⏱️ 1 h 20 min</span>
+                  <span>👥 6 porciones</span>
+                </div>
+                <h3 class="tarjeta-titulo">Lasaña Clásica a la Boloñesa Gratinada</h3>
+                <p class="tarjeta-descripcion">
+                  Capas generosas de pasta casera intercaladas con ragù boloñesa tradicional cocinado a fuego lento, bechamel cremosa a la nuez moscada y una cubierta dorada de mozzarella y queso rallado.
+                </p>
+                <div class="tarjeta-pie">
+                  <a href="recetarios/receta2.pdf" class="btn-descarga" download="receta2.pdf">
+                    <span class="icono-descarga" aria-hidden="true">📄</span>
+                    Descargar Ficha en PDF
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Receta 3 -->
+            <article class="tarjeta-receta">
+              <div class="tarjeta-imagen-contenedor">
+                <img src="imágenes/receta3.png" alt="Tarta quiche lorraine dorada con panceta crocante y queso gruyère" class="tarjeta-imagen" loading="lazy">
+                <span class="tarjeta-categoria-tag tag-salado">Salado</span>
+              </div>
+              <div class="tarjeta-cuerpo">
+                <div class="tarjeta-meta">
+                  <span>⏱️ 50 min</span>
+                  <span>👥 6-8 porciones</span>
+                </div>
+                <h3 class="tarjeta-titulo">Quiche Lorraine con Panceta y Gruyère</h3>
+                <p class="tarjeta-descripcion">
+                  Una base quebrada crocante rellena con crema fresca espesa, huevos de granja, bastoncitos de panceta ahumada dorada y el sabor inconfundible del auténtico queso Gruyère horneado.
+                </p>
+                <div class="tarjeta-pie">
+                  <a href="recetarios/receta3.pdf" class="btn-descarga" download="receta3.pdf">
+                    <span class="icono-descarga" aria-hidden="true">📄</span>
+                    Descargar Ficha en PDF
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Bloque de Recetas Dulces (Recetas 4, 5 y 6) -->
+          <div class="bloque-categoria bloque-dulce" role="region" aria-labelledby="label-dulce">
+            
+            <!-- Receta 4 -->
+            <article class="tarjeta-receta">
+              <div class="tarjeta-imagen-contenedor">
+                <img src="imágenes/receta4.png" alt="Porción de tiramisú clásico italiano espolvoreado con abundante cacao amargo" class="tarjeta-imagen" loading="lazy">
+                <span class="tarjeta-categoria-tag tag-dulce">Dulce</span>
+              </div>
+              <div class="tarjeta-cuerpo">
+                <div class="tarjeta-meta">
+                  <span>⏱️ 30 min (+ frío)</span>
+                  <span>👥 8 porciones</span>
+                </div>
+                <h3 class="tarjeta-titulo">Tiramisú Clásico Italiano al Café y Mascarpone</h3>
+                <p class="tarjeta-descripcion">
+                  El postre más emblemático de Italia: suave crema de queso mascarpone batida con yemas y claras montadas, capas de vainillas embebidas en café espresso fuerte y cacao amargo puro.
+                </p>
+                <div class="tarjeta-pie">
+                  <a href="recetarios/receta4.pdf" class="btn-descarga" download="receta4.pdf">
+                    <span class="icono-descarga" aria-hidden="true">📄</span>
+                    Descargar Ficha en PDF
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Receta 5 -->
+            <article class="tarjeta-receta">
+              <div class="tarjeta-imagen-contenedor">
+                <img src="imágenes/receta5.png" alt="Cheesecake horneado estilo New York coronado con compota de frutos rojos" class="tarjeta-imagen" loading="lazy">
+                <span class="tarjeta-categoria-tag tag-dulce">Dulce</span>
+              </div>
+              <div class="tarjeta-cuerpo">
+                <div class="tarjeta-meta">
+                  <span>⏱️ 1 h 15 min</span>
+                  <span>👥 10 porciones</span>
+                </div>
+                <h3 class="tarjeta-titulo">Cheesecake Horneado con Frutos Rojos</h3>
+                <p class="tarjeta-descripcion">
+                  Tarta horneada a baño María con una base crujiente de galletas a la manteca, corazón aterciopelado de queso crema aromatizado con limón y vainilla, y salsa casera de moras y frambuesas.
+                </p>
+                <div class="tarjeta-pie">
+                  <a href="recetarios/receta5.pdf" class="btn-descarga" download="receta5.pdf">
+                    <span class="icono-descarga" aria-hidden="true">📄</span>
+                    Descargar Ficha en PDF
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Receta 6 -->
+            <article class="tarjeta-receta">
+              <div class="tarjeta-imagen-contenedor">
+                <img src="imágenes/receta6.png" alt="Volcán de chocolate caliente con centro de lava fundente saliendo del bizcocho" class="tarjeta-imagen" loading="lazy">
+                <span class="tarjeta-categoria-tag tag-dulce">Dulce</span>
+              </div>
+              <div class="tarjeta-cuerpo">
+                <div class="tarjeta-meta">
+                  <span>⏱️ 25 min</span>
+                  <span>👥 4 unidades</span>
+                </div>
+                <h3 class="tarjeta-titulo">Volcán de Chocolate con Corazón Fundente</h3>
+                <p class="tarjeta-descripcion">
+                  Coulant irresistible de chocolate semiamargo al 70% de cacao: exterior de bizcochuelo esponjoso recién horneado que al cortar libera un centro tibio y sedoso de chocolate fundido.
+                </p>
+                <div class="tarjeta-pie">
+                  <a href="recetarios/receta6.pdf" class="btn-descarga" download="receta6.pdf">
+                    <span class="icono-descarga" aria-hidden="true">📄</span>
+                    Descargar Ficha en PDF
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Quién Mantiene el Sitio ("Acerca de") -->
+    <section id="acerca-de" class="acerca-seccion" aria-labelledby="acerca-titulo">
+      <div class="contenedor">
+        <div class="acerca-tarjeta">
+          <div class="acerca-foto-col">
+            <img src="imágenes/autora.png" alt="Fotografía de Valentina Morales, cocinera y creadora del sitio" class="acerca-foto" loading="lazy">
+            <div class="acerca-insignia">Chef Creadora</div>
+          </div>
+          <div class="acerca-info-col">
+            <span class="seccion-subtitulo-kicker">Quién mantiene el sitio</span>
+            <h2 id="acerca-titulo" class="acerca-nombre">Valentina Morales</h2>
+            <p class="acerca-rol">Cocinera Profesional & Divulgadora Gastronómica</p>
+            <p class="acerca-bio">
+              ¡Hola! Soy Valentina. Comencé este espacio culinario con la convicción de que la buena cocina no requiere técnicas imposibles ni electrodomésticos extravagantes, sino buenos ingredientes, paciencia y amor por el fuego.
+            </p>
+            <p class="acerca-bio">
+              Cada una de las recetas publicadas en este recetario ha sido probada, perfeccionada y documentada meticulosamente en fichas PDF coleccionables para que puedas cocinarlas en tu hogar con total garantía de éxito.
+            </p>
+            <div class="acerca-contacto-directo">
+              <div class="contacto-item">
+                <span class="contacto-item-icono" aria-hidden="true">📍</span>
+                <span>Buenos Aires, Argentina</span>
+              </div>
+              <div class="contacto-item">
+                <span class="contacto-item-icono" aria-hidden="true">✉️</span>
+                <span>valentina.recetas@delicias-caseras.com</span>
+              </div>
+            </div>
+            <div class="acerca-cta">
+              <a href="#contacto" class="btn-primario">Escribime un mensaje</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Contacto: Formulario en HTML puro -->
+    <section id="contacto" class="contacto-seccion" aria-labelledby="contacto-titulo">
+      <div class="contenedor">
+        <div class="contacto-caja">
+          <div class="seccion-encabezado">
+            <span class="seccion-subtitulo-kicker">Escribinos</span>
+            <h2 id="contacto-titulo" class="seccion-titulo">Formulario de Contacto</h2>
+            <p class="seccion-descripcion">
+              ¿Tenés dudas sobre alguna preparación, querés sugerir una nueva receta o dejar tu comentario? Completá el siguiente formulario y nos pondremos en contacto a la brevedad.
+            </p>
+          </div>
+
+          <!-- Formulario simple en HTML puro -->
+          <form action="#" method="get" class="formulario-contacto">
+            <div class="campo-grupo">
+              <label for="nombre" class="campo-label">Nombre completo:</label>
+              <input 
+                type="text" 
+                id="nombre" 
+                name="nombre" 
+                class="campo-input" 
+                placeholder="Ej. María Eugenia Rossi" 
+                required 
+                autocomplete="name"
+              >
+            </div>
+
+            <div class="campo-grupo">
+              <label for="email" class="campo-label">Correo electrónico:</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                class="campo-input" 
+                placeholder="tu.correo@ejemplo.com" 
+                required 
+                autocomplete="email"
+              >
+            </div>
+
+            <div class="campo-grupo">
+              <label for="mensaje" class="campo-label">Tu mensaje o consulta:</label>
+              <textarea 
+                id="mensaje" 
+                name="mensaje" 
+                class="campo-textarea" 
+                rows="5" 
+                placeholder="Contanos tu experiencia, dudas sobre las proporciones de una receta o sugerencias para próximos platos..." 
+                required
+              ></textarea>
+            </div>
+
+            <div class="formulario-acciones">
+              <button type="submit" class="btn-enviar">
+                <span class="btn-icono" aria-hidden="true">✉️</span>
+                Enviar Mensaje
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="pie-sitio">
+    <div class="contenedor pie-contenido">
+      <div class="pie-info">
+        <div class="pie-logo">
+          <span class="logo-icono" aria-hidden="true">🍳</span>
+          <span class="logo-texto">Delicias Caseras</span>
+        </div>
+        <p class="pie-lema">Recetas artesanales, sabores de siempre y fichas descargables en PDF.</p>
+      </div>
+
+      <div class="pie-enlaces">
+        <h4 class="pie-subtitulo">Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#catalogo">Catálogo de Recetas</a></li>
+          <li><a href="#acerca-de">Quién mantiene el sitio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="pie-creditos">
+        <p>&copy; 2026 Delicias Caseras. Todos los derechos reservados.</p>
+        <p class="pie-subtexto">Diseñado con HTML5 y CSS3 semántico puro. Sin frameworks ni JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

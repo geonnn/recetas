@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Recetario casero con platos salados y dulces para descargar.">
+  <title>Sabor de Casa | Recetas</title>
+  <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+  <header class="encabezado">
+    <nav class="navegacion" aria-label="Navegación principal">
+      <a class="marca" href="#inicio">Sabor de Casa</a>
+      <ul>
+        <li><a href="#catalogo">Recetas</a></li>
+        <li><a href="#acerca-de">Quién mantiene el sitio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <section id="inicio" class="presentacion" aria-labelledby="titulo-principal">
+      <p class="eyebrow">Recetas simples, momentos ricos</p>
+      <h1 id="titulo-principal">Cocina casera para todos los días</h1>
+      <p>Seis recetas para preparar sin apuro, descargar y volver a disfrutar.</p>
+      <a class="boton" href="#catalogo">Ver el catálogo</a>
+    </section>
+  </header>
+
+  <main>
+    <section id="catalogo" class="catalogo" aria-labelledby="titulo-catalogo">
+      <div class="seccion-titulo">
+        <p class="eyebrow">El recetario</p>
+        <h2 id="titulo-catalogo">Elegí qué te gustaría cocinar</h2>
+        <p>Seleccioná una categoría para ver sus recetas y descargar cada preparación en PDF.</p>
+      </div>
+
+      <input class="tab-input" type="radio" name="categoria" id="salado" checked>
+      <input class="tab-input" type="radio" name="categoria" id="dulce">
+      <div class="tabs" role="tablist" aria-label="Categorías de recetas">
+        <label for="salado" role="tab">Salado</label>
+        <label for="dulce" role="tab">Dulce</label>
+      </div>
+
+      <div class="grupos-recetas">
+        <section class="grupo-recetas salado" aria-labelledby="titulo-salado">
+          <h3 id="titulo-salado">Recetas saladas</h3>
+          <div class="tarjetas">
+            <article class="tarjeta-receta">
+              <img src="imágenes/receta1.png" alt="Empanadas doradas servidas en un plato">
+              <div class="tarjeta-contenido"><h4>Empanadas caprese</h4><p>Mozzarella, tomate y albahaca dentro de una masa crujiente.</p><a href="recetarios/receta1.pdf" download>Descargar receta en PDF</a></div>
+            </article>
+            <article class="tarjeta-receta">
+              <img src="imágenes/receta2.png" alt="Risotto cremoso de calabaza con hierbas">
+              <div class="tarjeta-contenido"><h4>Risotto cremoso de calabaza</h4><p>Arroz arborio, calabaza asada y parmesano para una cena reconfortante.</p><a href="recetarios/receta2.pdf" download>Descargar receta en PDF</a></div>
+            </article>
+            <article class="tarjeta-receta">
+              <img src="imágenes/receta3.png" alt="Tarta horneada con verduras en espiral">
+              <div class="tarjeta-contenido"><h4>Tarta de verduras y ricota</h4><p>Una tarta colorida con ricota suave y vegetales de estación.</p><a href="recetarios/receta3.pdf" download>Descargar receta en PDF</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="grupo-recetas dulce" aria-labelledby="titulo-dulce">
+          <h3 id="titulo-dulce">Recetas dulces</h3>
+          <div class="tarjetas">
+            <article class="tarjeta-receta">
+              <img src="imágenes/receta4.png" alt="Cuadrados de brownie de chocolate">
+              <div class="tarjeta-contenido"><h4>Brownies de chocolate</h4><p>Intensos, húmedos y con una costra delicadamente crocante.</p><a href="recetarios/receta4.pdf" download>Descargar receta en PDF</a></div>
+            </article>
+            <article class="tarjeta-receta">
+              <img src="imágenes/receta5.png" alt="Porción de lemon pie con merengue tostado">
+              <div class="tarjeta-contenido"><h4>Lemon pie con merengue</h4><p>Base crocante, crema cítrica y un copete de merengue italiano.</p><a href="recetarios/receta5.pdf" download>Descargar receta en PDF</a></div>
+            </article>
+            <article class="tarjeta-receta">
+              <img src="imágenes/receta6.png" alt="Budín de banana cortado en rodajas">
+              <div class="tarjeta-contenido"><h4>Budín de banana y nueces</h4><p>La solución más rica para aprovechar bananas maduras.</p><a href="recetarios/receta6.pdf" download>Descargar receta en PDF</a></div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="acerca-de" class="acerca-de" aria-labelledby="titulo-acerca-de">
+      <div><p class="eyebrow">Detrás del delantal</p><h2 id="titulo-acerca-de">Quién mantiene el sitio</h2></div>
+      <p><strong>Lucía Fernández</strong> es aficionada a la cocina cotidiana y reúne aquí preparaciones claras, probadas en casa y pensadas para compartir. Para consultas, escribile desde el formulario de contacto.</p>
+    </section>
+
+    <section id="contacto" class="contacto" aria-labelledby="titulo-contacto">
+      <div><p class="eyebrow">Hablemos</p><h2 id="titulo-contacto">Contacto</h2><p>¿Tenés una sugerencia o querés compartir una receta? Dejá tu mensaje.</p></div>
+      <form action="#contacto" method="post">
+        <div><label for="nombre">Nombre</label><input id="nombre" name="nombre" type="text" autocomplete="name" required></div>
+        <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" rows="5" required></textarea></div>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Sabor de Casa · Hecho con ingredientes simples y mucho cariño.</p></footer>
+</body>
+</html>
