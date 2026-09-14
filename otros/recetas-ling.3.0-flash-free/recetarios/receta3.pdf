@@ -1,0 +1,76 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources << /Font << /F1 5 0 R >> >> >>
+/Type /Page
+/Parent 2 0 R >>
+endobj
+4 0 obj
+<< /Length 866 >>
+stream
+BT
+/F1 12 Tf
+50 750 Td
+(Pollo al Horno con Hierbas) Tj
+0 -20 Td
+/FT1 10 Tf
+0 -15 Td
+(INGREDIENTES:) Tj
+0 -15 Td
+(- 1 pollo entero \(1.5kg\)) Tj
+0 -12 Td
+(- 4 ramas de romero fresco) Tj
+0 -12 Td
+(- 4 ramas de tomillo fresco) Tj
+0 -12 Td
+(- 3 dientes de ajo) Tj
+0 -12 Td
+(- 2 limones) Tj
+0 -12 Td
+(- 3 cucharadas de aceite de oliva) Tj
+0 -12 Td
+(- Sal y pimienta) Tj
+0 -12 Td
+(- 1 cebolla cortada en cuartos) Tj
+0 -12 Td
+
+(- PREPARACIÓN:) Tj
+0 -15 Td
+(- Precalentar el horno a 200°C.) Tj
+0 -12 Td
+(- Frotar el pollo con aceite de oliva, sal y pimienta.) Tj
+0 -12 Td
+(- Rellenar la cavidad con limones, ajo, romero y tomillo.) Tj
+0 -12 Td
+(- Colocar el pollo en una fuente con la cebolla alrededor.) Tj
+0 -12 Td
+(- Rociar con aceite y cocinar por 1 hora 30 minutos, volteando a mitad de cocción.) Tj
+0 -12 Td
+(- Dejar reposar 15 minutos antes de servir.) Tj
+0 -12 Td
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000244 00000 n 
+0000001161 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1231
+%%EOF

@@ -1,0 +1,72 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources << /Font << /F1 5 0 R >> >> >>
+/Type /Page
+/Parent 2 0 R >>
+endobj
+4 0 obj
+<< /Length 914 >>
+stream
+BT
+/F1 12 Tf
+50 750 Td
+(Pasta Carbonara Clásica) Tj
+0 -20 Td
+/FT1 10 Tf
+0 -15 Td
+(INGREDIENTES:) Tj
+0 -15 Td
+(- 400g de pasta \(espagueti o rigatoni\)) Tj
+0 -12 Td
+(- 150g de panceta o guanciale) Tj
+0 -12 Td
+(- 2 yemas de huevo + 1 huevo entero) Tj
+0 -12 Td
+(- 100g de queso Parmigiano Reggiano rallado) Tj
+0 -12 Td
+(- Pimienta negra recién molida) Tj
+0 -12 Td
+(- Sal para el agua) Tj
+0 -12 Td
+
+(- PREPARACIÓN:) Tj
+0 -15 Td
+(- Cocinar la pasta en abundante agua con sal hasta al dente.) Tj
+0 -12 Td
+(- Cortar la panceta en cubitos y saltear en sartén sin aceite hasta dorar.) Tj
+0 -12 Td
+(- Mezclar las yemas, el huevo entero y el queso rallado en un bol.) Tj
+0 -12 Td
+(- Escurrir la pasta y añadirla a la sartén con la panceta.) Tj
+0 -12 Td
+(- Retirar del fuego y verter la mezcla de huevo y queso, revolviendo rápidamente.) Tj
+0 -12 Td
+(- Servir con pimienta negra generosa y queso rallado extra.) Tj
+0 -12 Td
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000244 00000 n 
+0000001209 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1279
+%%EOF

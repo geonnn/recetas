@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cocina en Casa — Recetas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="site-logo">🍽️ Cocina en Casa</h1>
+      <p class="site-tagline">Recetas caseras para cada día</p>
+    </div>
+  </header>
+
+  <nav class="main-nav" aria-label="Navegación principal">
+    <ul class="nav-list">
+      <li><a href="#inicio" class="nav-link">Inicio</a></li>
+      <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
+      <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      <li><a href="#acerca" class="nav-link">Acerca de</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="inicio" class="hero">
+      <h2>Bienvenidos a nuestra cocina</h2>
+      <p>Explorá nuestra colección de recetas saladas y dulces, todas preparadas con amor y los mejores ingredientes.</p>
+    </section>
+
+    <section id="catalogo" class="catalogo">
+      <h2>Catálogo de Recetas</h2>
+
+      <div class="catalogo-body">
+        <input type="radio" id="cat-todo" name="categoria" value="todo" checked>
+        <input type="radio" id="cat-salado" name="categoria" value="salado">
+        <input type="radio" id="cat-dulce" name="categoria" value="dulce">
+
+        <div class="selector-categoria">
+          <label for="cat-todo" class="tab-btn">Todas</label>
+          <label for="cat-salado" class="tab-btn">🍽️ Salado</label>
+          <label for="cat-dulce" class="tab-btn">🍰 Dulce</label>
+        </div>
+
+        <div class="zona-recetas">
+          <div class="recetas-block" id="bloque-todo">
+            <div class="tarjetas-grid">
+              <article class="tarjeta">
+                <img src="imágenes/receta1.png" alt="Pasta Carbonara Clásica" class="tarjeta-img">
+                <div class="tarjeta-body">
+                  <h3 class="tarjeta-titulo">Pasta Carbonara Clásica</h3>
+                  <span class="tarjeta-badge">Salado</span>
+                  <p class="tarjeta-desc">Una cremosa pasta con salsa de queso, huevo y panceta.</p>
+                  <a href="recetarios/receta1.pdf" class="tarjeta-link" download="receta1.pdf">📄 Descargar PDF</a>
+                </div>
+              </article>
+              <article class="tarjeta">
+                <img src="imágenes/receta2.png" alt="Ensalada César Casera" class="tarjeta-img">
+                <div class="tarjeta-body">
+                  <h3 class="tarjeta-titulo">Ensalada César Casera</h3>
+                  <span class="tarjeta-badge">Salado</span>
+                  <p class="tarjeta-desc">Crujientes hojas con aderezo casero y crutones dorados.</p>
+                  <a href="recetarios/receta2.pdf" class="tarjeta-link" download="receta2.pdf">📄 Descargar PDF</a>
+                </div>
+              </article>
+              <article class="tarjeta">
+                <img src="imágenes/receta3.png" alt="Pollo al Horno con Hierbas" class="tarjeta-img">
+                <div class="tarjeta-body">
+                  <h3 class="tarjeta-titulo">Pollo al Horno con Hierbas</h3>
+                  <span class="tarjeta-badge">Salado</span>
+                  <p class="tarjeta-desc">Pollo dorado marinado con romero, tomillo y limón.</p>
+                  <a href="recetarios/receta3.pdf" class="tarjeta-link" download="receta3.pdf">📄 Descargar PDF</a>
+                </div>
+              </article>
+              <article class="tarjeta">
+                <img src="imágenes/receta4.png" alt="Tiramisú Tradicional" class="tarjeta-img">
+                <div class="tarjeta-body">
+                  <h3 class="tarjeta-titulo">Tiramisú Tradicional</h3>
+                  <span class="tarjeta-badge">Dulce</span>
+                  <p class="tarjeta-desc">Capas de mascarpone, café y cocoa en un postre clásico italiano.</p>
+                  <a href="recetarios/receta4.pdf" class="tarjeta-link" download="receta4.pdf">📄 Descargar PDF</a>
+                </div>
+              </article>
+              <article class="tarjeta">
+                <img src="imágenes/receta5.png" alt="Galletas de Avena y Miel" class="tarjeta-img">
+                <div class="tarjeta-body">
+                  <h3 class="tarjeta-titulo">Galletas de Avena y Miel</h3>
+                  <span class="tarjeta-badge">Dulce</span>
+                  <p class="tarjeta-desc">Galletas crujientes con avena, miel y especias cálidas.</p>
+                  <a href="recetarios/receta5.pdf" class="tarjeta-link" download="receta5.pdf">📄 Descargar PDF</a>
+                </div>
+              </article>
+              <article class="tarjeta">
+                <img src="imágenes/receta6.png" alt="Flan Casero con Caramelo" class="tarjeta-img">
+                <div class="tarjeta-body">
+                  <h3 class="tarjeta-titulo">Flan Casero con Caramelo</h3>
+                  <span class="tarjeta-badge">Dulce</span>
+                  <p class="tarjeta-desc">Flan sedoso con caramelo casero, postre reconfortante.</p>
+                  <a href="recetarios/receta6.pdf" class="tarjeta-link" download="receta6.pdf">📄 Descargar PDF</a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="recetas-block" id="bloque-salado">
+            <div class="tarjetas-grid">
+              <article class="tarjeta">
+                <img src="imágenes/receta1.png" alt="Pasta Carbonara Clásica" class="tarjeta-img">
+                <div class="tarjeta-body">
+                  <h3 class="tarjeta-titulo">Pasta Carbonara Clásica</h3>
+                  <span class="tarjeta-badge">Salado</span>
+                  <p class="tarjeta-desc">Una cremosa pasta con salsa de queso, huevo y panceta.</p>
+                  <a href="recetarios/receta1.pdf" class="tarjeta-link" download="receta1.pdf">📄 Descargar PDF</a>
+                </div>
+              </article>
+              <article class="tarjeta">
+                <img src="imágenes/receta2.png" alt="Ensalada César Casera" class="tarjeta-img">
+                <div class="tarjeta-body">
+                  <h3 class="tarjeta-titulo">Ensalada César Casera</h3>
+                  <span class="tarjeta-badge">Salado</span>
+                  <p class="tarjeta-desc">Crujientes hojas con aderezo casero y crutones dorados.</p>
+                  <a href="recetarios/receta2.pdf" class="tarjeta-link" download="receta2.pdf">📄 Descargar PDF</a>
+                </div>
+              </article>
+              <article class="tarjeta">
+                <img src="imágenes/receta3.png" alt="Pollo al Horno con Hierbas" class="tarjeta-img">
+                <div class="tarjeta-body">
+                  <h3 class="tarjeta-titulo">Pollo al Horno con Hierbas</h3>
+                  <span class="tarjeta-badge">Salado</span>
+                  <p class="tarjeta-desc">Pollo dorado marinado con romero, tomillo y limón.</p>
+                  <a href="recetarios/receta3.pdf" class="tarjeta-link" download="receta3.pdf">📄 Descargar PDF</a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="recetas-block" id="bloque-dulce">
+            <div class="tarjetas-grid">
+              <article class="tarjeta">
+                <img src="imágenes/receta4.png" alt="Tiramisú Tradicional" class="tarjeta-img">
+                <div class="tarjeta-body">
+                  <h3 class="tarjeta-titulo">Tiramisú Tradicional</h3>
+                  <span class="tarjeta-badge">Dulce</span>
+                  <p class="tarjeta-desc">Capas de mascarpone, café y cocoa en un postre clásico italiano.</p>
+                  <a href="recetarios/receta4.pdf" class="tarjeta-link" download="receta4.pdf">📄 Descargar PDF</a>
+                </div>
+              </article>
+              <article class="tarjeta">
+                <img src="imágenes/receta5.png" alt="Galletas de Avena y Miel" class="tarjeta-img">
+                <div class="tarjeta-body">
+                  <h3 class="tarjeta-titulo">Galletas de Avena y Miel</h3>
+                  <span class="tarjeta-badge">Dulce</span>
+                  <p class="tarjeta-desc">Galletas crujientes con avena, miel y especias cálidas.</p>
+                  <a href="recetarios/receta5.pdf" class="tarjeta-link" download="receta5.pdf">📄 Descargar PDF</a>
+                </div>
+              </article>
+              <article class="tarjeta">
+                <img src="imágenes/receta6.png" alt="Flan Casero con Caramelo" class="tarjeta-img">
+                <div class="tarjeta-body">
+                  <h3 class="tarjeta-titulo">Flan Casero con Caramelo</h3>
+                  <span class="tarjeta-badge">Dulce</span>
+                  <p class="tarjeta-desc">Flan sedoso con caramelo casero, postre reconfortante.</p>
+                  <a href="recetarios/receta6.pdf" class="tarjeta-link" download="receta6.pdf">📄 Descargar PDF</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <p>¿Tenés una pregunta o querés compartir tu receta? ¡Escribinos!</p>
+      <form action="#" method="POST" class="formulario" id="form-contacto">
+        <div class="form-grupo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-grupo">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+        </div>
+        <div class="form-grupo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribí tu mensaje aquí..." required></textarea>
+        </div>
+        <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+      </form>
+    </section>
+
+    <section id="acerca" class="acerca">
+      <h2>Acerca de</h2>
+      <div class="acerca-contenido">
+        <div class="acerca-foto">
+          <img src="imágenes/receta1.png" alt="Foto de María González, chef" class="acerca-img">
+        </div>
+        <div class="acerca-info">
+          <h3>María González</h3>
+          <p class="acerca-desc">Soy una apasionada por la cocina casera que cree que comer bien no necesita ser complicado. Con más de 10 años de experiencia, comparto recetas accesibles y deliciosas para que todos puedan disfrutar cocinando.</p>
+          <p class="acerca-contacto">📧 maria@cocinaencasa.com | 📱 +54 9 11 1234-5678</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Cocina en Casa. Todos los derechos reservados.</p>
+    <p class="footer-fonts">Fuentes: Playfair Display y Source Sans 3 de Google Fonts</p>
+  </footer>
+
+</body>
+</html>

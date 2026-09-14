@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabores de Casa · Recetas de Cocina</title>
+  <meta name="description" content="Catálogo de recetas caseras saladas y dulces, fáciles de preparar y deliciosas." />
+
+  <!-- Google Fonts: Playfair Display (títulos) + Lato (cuerpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="estilosIA.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#catalogo" class="site-logo" aria-label="Sabores de Casa – ir al catálogo">
+        <span class="logo-icon" aria-hidden="true">🍲</span>
+        <span class="logo-text">Sabores de Casa</span>
+      </a>
+
+      <!-- Menú hamburguesa CSS-only para móvil -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menú de navegación">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul role="list">
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#acerca">Quién mantiene el sitio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Bienvenida">
+      <div class="hero-inner">
+        <h1>Recetas con alma casera</h1>
+        <p class="hero-subtitle">Descubrí sabores salados y dulces pensados para cocinar con amor y sin complicaciones.</p>
+        <a href="#catalogo" class="btn-hero">Ver recetas</a>
+      </div>
+    </section>
+
+    <!-- CATÁLOGO -->
+    <section class="catalogo" id="catalogo" aria-labelledby="catalogo-titulo">
+      <div class="container">
+        <h2 id="catalogo-titulo" class="section-title">Catálogo de Recetas</h2>
+
+        <!-- Radio inputs ocultos para CSS-only tabs -->
+        <input type="radio" name="categoria" id="tab-salado" class="tab-input" checked />
+        <input type="radio" name="categoria" id="tab-dulce"  class="tab-input" />
+
+        <!-- Pestañas visibles -->
+        <div class="tabs" role="tablist" aria-label="Categorías de recetas">
+          <label for="tab-salado" class="tab-label" role="tab">🧂 Salado</label>
+          <label for="tab-dulce"  class="tab-label" role="tab">🍰 Dulce</label>
+        </div>
+
+        <!-- Panel SALADO -->
+        <div class="tab-panel panel-salado" role="tabpanel" id="panel-salado">
+          <div class="recetas-grid">
+
+            <article class="receta-card">
+              <figure class="receta-imagen">
+                <img src="imagenes/receta1.png" alt="Cazuela de pollo con verduras" width="400" height="300" loading="lazy" />
+              </figure>
+              <div class="receta-info">
+                <h3 class="receta-nombre">Cazuela de Pollo con Verduras</h3>
+                <p class="receta-desc">Un clásico reconfortante: pollo tierno en caldo especiado con papas, zanahorias y arvejas.</p>
+                <a href="recetarios/receta1.pdf" class="btn-descarga" download aria-label="Descargar receta de Cazuela de Pollo en PDF">
+                  ⬇ Descargar receta (PDF)
+                </a>
+              </div>
+            </article>
+
+            <article class="receta-card">
+              <figure class="receta-imagen">
+                <img src="imagenes/receta2.png" alt="Pasta al pesto de albahaca" width="400" height="300" loading="lazy" />
+              </figure>
+              <div class="receta-info">
+                <h3 class="receta-nombre">Pasta al Pesto de Albahaca</h3>
+                <p class="receta-desc">Tallarines frescos con salsa pesto casera de albahaca, ajo, piñones y parmesano.</p>
+                <a href="recetarios/receta2.pdf" class="btn-descarga" download aria-label="Descargar receta de Pasta al Pesto en PDF">
+                  ⬇ Descargar receta (PDF)
+                </a>
+              </div>
+            </article>
+
+            <article class="receta-card">
+              <figure class="receta-imagen">
+                <img src="imagenes/receta3.png" alt="Tarta de cebolla y queso" width="400" height="300" loading="lazy" />
+              </figure>
+              <div class="receta-info">
+                <h3 class="receta-nombre">Tarta de Cebolla y Queso</h3>
+                <p class="receta-desc">Masa crocante con relleno cremoso de cebollas caramelizadas y queso gruyère.</p>
+                <a href="recetarios/receta3.pdf" class="btn-descarga" download aria-label="Descargar receta de Tarta de Cebolla en PDF">
+                  ⬇ Descargar receta (PDF)
+                </a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Panel DULCE -->
+        <div class="tab-panel panel-dulce" role="tabpanel" id="panel-dulce">
+          <div class="recetas-grid">
+
+            <article class="receta-card">
+              <figure class="receta-imagen">
+                <img src="imagenes/receta4.png" alt="Budín de naranja y almendras" width="400" height="300" loading="lazy" />
+              </figure>
+              <div class="receta-info">
+                <h3 class="receta-nombre">Budín de Naranja y Almendras</h3>
+                <p class="receta-desc">Esponjoso y aromático, combina la frescura del cítrico con la textura de las almendras molidas.</p>
+                <a href="recetarios/receta4.pdf" class="btn-descarga" download aria-label="Descargar receta de Budín de Naranja en PDF">
+                  ⬇ Descargar receta (PDF)
+                </a>
+              </div>
+            </article>
+
+            <article class="receta-card">
+              <figure class="receta-imagen">
+                <img src="imagenes/receta5.png" alt="Flan casero de vainilla" width="400" height="300" loading="lazy" />
+              </figure>
+              <div class="receta-info">
+                <h3 class="receta-nombre">Flan Casero de Vainilla</h3>
+                <p class="receta-desc">El postre argentino por excelencia: sedoso, con caramelo dorado y crema batida.</p>
+                <a href="recetarios/receta5.pdf" class="btn-descarga" download aria-label="Descargar receta de Flan Casero en PDF">
+                  ⬇ Descargar receta (PDF)
+                </a>
+              </div>
+            </article>
+
+            <article class="receta-card">
+              <figure class="receta-imagen">
+                <img src="imagenes/receta6.png" alt="Galletitas de avena y chocolate" width="400" height="300" loading="lazy" />
+              </figure>
+              <div class="receta-info">
+                <h3 class="receta-nombre">Galletitas de Avena y Chocolate</h3>
+                <p class="receta-desc">Crujientes por fuera y tiernas por dentro, con chips de chocolate y miel de caña.</p>
+                <a href="recetarios/receta6.pdf" class="btn-descarga" download aria-label="Descargar receta de Galletitas en PDF">
+                  ⬇ Descargar receta (PDF)
+                </a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ACERCA DE -->
+    <section class="acerca" id="acerca" aria-labelledby="acerca-titulo">
+      <div class="container">
+        <h2 id="acerca-titulo" class="section-title">Quién mantiene el sitio</h2>
+        <div class="acerca-inner">
+          <figure class="acerca-foto">
+            <img
+              src="imagenes/mantenedora.png"
+              alt="Retrato de Laura Gómez, cocinera y creadora del sitio"
+              width="200"
+              height="200"
+              loading="lazy"
+            />
+          </figure>
+          <div class="acerca-texto">
+            <h3>Laura Gómez</h3>
+            <p class="acerca-rol">Cocinera apasionada &amp; creadora de contenido gastronómico</p>
+            <p>
+              Soy Laura, cocinera autodidacta de Buenos Aires con más de diez años experimentando sabores en la cocina.
+              Este sitio nació del deseo de compartir recetas reales, sin tecnicismos, pensadas para hacerse en casa con
+              ingredientes de almacén.
+            </p>
+            <p>
+              Mi objetivo es que cualquier persona, sin importar su nivel de experiencia, pueda sentarse a la mesa con
+              un plato del que se sienta orgullosa.
+            </p>
+            <address class="acerca-contacto">
+              <p>📧 <a href="mailto:laura@saboresdecasa.ar">laura@saboresdecasa.ar</a></p>
+              <p>📷 <a href="https://instagram.com/saboresdecasa" target="_blank" rel="noopener noreferrer">@saboresdecasa</a></p>
+            </address>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto" id="contacto" aria-labelledby="contacto-titulo">
+      <div class="container">
+        <h2 id="contacto-titulo" class="section-title">Contacto</h2>
+        <p class="contacto-intro">¿Tenés una receta para compartir o una consulta? Escribime y te respondo a la brevedad.</p>
+
+        <form class="formulario-contacto" method="post" action="#" novalidate>
+          <div class="campo">
+            <label for="nombre">Nombre <span class="req" aria-hidden="true">*</span></label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              autocomplete="name"
+              required
+              placeholder="Tu nombre completo"
+              aria-required="true"
+            />
+          </div>
+
+          <div class="campo">
+            <label for="email">Correo electrónico <span class="req" aria-hidden="true">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+              placeholder="tu@email.com"
+              aria-required="true"
+            />
+          </div>
+
+          <div class="campo">
+            <label for="asunto">Asunto</label>
+            <input
+              type="text"
+              id="asunto"
+              name="asunto"
+              placeholder="¿De qué querés hablar?"
+            />
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Mensaje <span class="req" aria-hidden="true">*</span></label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="6"
+              required
+              placeholder="Escribí tu mensaje acá..."
+              aria-required="true"
+            ></textarea>
+          </div>
+
+          <div class="campo campo-submit">
+            <button type="submit" class="btn-submit">Enviar mensaje</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">🍲 Sabores de Casa</p>
+      <nav aria-label="Navegación del pie de página">
+        <ul role="list">
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#acerca">Acerca de</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <p class="footer-copy">
+        <small>&copy; 2026 Sabores de Casa. Hecho con amor y mucho perejil.</small>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

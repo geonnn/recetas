@@ -1,0 +1,46 @@
+{
+  "recetas": [
+    {
+      "id": 1,
+      "nombre": "Revuelta de Papas con cebolla",
+      "categoria": "Salado",
+      "ingredientes": "4 papas medianas\n1 cebolla grande\n3 huevos\n2 cucharadas de aceite vegetal\nSal y pimienta al gusto\nPerejil fresco picado para decorar",
+      "preparacion": "1. Pelar y cortar las papas en cubos pequeños.\n2. Picar la cebolla en cubitos finos.\n3. Calentar el aceite en una sartén grande a fuego medio.\n4. Agregar la cebolla y cocinar hasta que esté transparente, unos 5 minutos.\n5. Agregar las papas y cocinar por 10-15 minutos, revolviendo ocasionalmente, hasta que estén tiernas.\n6. Batir los huevos en un tazón y agregar sal y pimienta.\n7. Verificar que las papas estén cocidas, empujarlas a un lado de la sartén y verter los huevos batidos en el espacio vacío.\n8. Cocinar los huevos revueltos hasta que estén apenas cuajados, luego mezclar todo junto.\n9. Espolvorear con perejil fresco y servir caliente."
+    },
+    {
+      "id": 2,
+      "nombre": "Pollo Asado con Limón y Hierbas",
+      "categoria": "Salado",
+      "ingredientes": "1 pollo entero (aprox. 1.5 kg)\n2 limones\n4 dientes de ajo picados\n2 cucharadas de tomillo fresco\n2 cucharadas de romero fresco\n1 cucharada de aceite de oliva\nSal y pimienta al gusto\n1 cabeza de ajo entera\n2 tazas de vino blanco (opcional)",
+      "preparacion": "1. Precalentar el horno a 180°C (350°F).\n2. Lavar el pollo y secarlo con papel absorbente.\n3. Frotar el pollo con aceite de oliva, sal y pimienta por toda la superficie.\n4. Rellenar la cavidad del pollo con el limón cortado en mitades, los ajos picados, tomillo y romero.\n5. Colocar el pollo en una asadera y hornear por 45 minutos.\n6. Retirar la asadera, rociar el pollo con el jugo que se haya liberado y volver al horno.\n7. Continuar horneando por 45-60 minutos más, bañando cada 15 minutos, hasta que la piel esté dorada y el pollo esté completamente cocido (165°F interno).\n8. Dejar reposar 10 minutos antes de cortar y servir."
+    },
+    {
+      "id": 3,
+      "nombre": "Espaguetis a la Bolonesa Casera",
+      "categoria": "Salado",
+      "ingredientes": "500g de espaguetis\n500g de carne molida de res\n1 cebolla grande picada\n2 dientes de ajo picados\n400g de tomates picados (o una lata de tomate triturado)\n2 cucharadas de aceite de oliva\n1 cucharada de orégano seco\n1 cucharada de albahaca seca\nSal y azúcar al gusto\nQueso parmesano para servir",
+      "preparacion": "1. Cocer los espaguetis en agua con sal según las instrucciones del paquete hasta al dente.\n2. Mientras tanto, calentar el aceite de oliva en una olla grande a fuego medio.\n3. Agregar la cebolla picada y cocinar hasta que esté transparente, unos 5 minutos.\n4. Agregar el ajo picado y cocoger por 1 minuto más hasta que esté fragante.\n5. Agregar la carne molida y cocinar, rompiéndola con una cuchara, hasta que se dore por completo.\n6. Agregar los tomates picados, el orégano, la albahaca, sal y un pinchito de azúcar para contrarrestar la acidez.\n7. Reducir el fuego a bajo y dejar cocinar la salsa por 20-30 minutos, revolviendo ocasionalmente.\n8. Escurrir los espaguetis y servir con la salsa bolonesa por encima, espolvoreado con queso parmesano."
+    },
+    {
+      "id": 4,
+      "nombre": "Torta de Zanahoria con Crema de Queso",
+      "categoria": "Dulce",
+      "ingredientes": "3 zanahorias medianas ralladas\n3 huevos\n1 taza de aceite vegetal\n2 tazas de azúcar\n2 tazas de harina de trigo\n1 cucharadita de bicarbonato de sodio\n1 cucharadita de canela en polvo\n1/2 cucharadita de nuez moscada molida\n1/2 cucharadita de clavo molido\nPara la crema de queso: 250g de queso crema a temperatura ambiente, 100g de manteca a temperatura ambiente, 3 tazas de azúcar impalpable, 1 cucharadilla de extracto de vainilla",
+      "preparacion": "1. Precalentar el horno a 180°C (350°F). Engrasar y enharinar dos moldes redondos.\n2. En un tazón grande, mezclar el aceite, el azúcar y los huevos hasta obtener una mezcla homogénea.\n3. Agregar la zanahoria rallada y mezclar bien.\n4. En otro tazón, tamizar la harina, bicarbonato, canela, nuez moscada y clavo.\n5. Agregar los ingredientes secos a la mezcla de zanahoria alternando con un poco de agua, hasta formar una masa suave.\n6. Dividir la masa entre los dos moldes y hornear por 30-35 minutos, o hasta que un palillo inserto salga limpio.\n7. Dejar enfriar completamente antes de desmoldar.\n8. Para la crema: batir el queso crema y la manteca hasta que esté esponjosa.\n9. Agregar el azúcar impalpable y la vainilla, batir hasta obtener una crema suave.\n10. Untar la crema entre las capas y en la parte superior y laterales de la torta."
+    },
+    {
+      "id": 5,
+      "nombre": "Brownies de Chocolate Con Nueces",
+      "categoria": "Dulce",
+      "ingredientes": "200g de chocolate negro (70% cacao)\n170g de mantequilla sin sal\n3 huevos\n1 taza de azúcar blanca\n1 cucharadita de extracto de vainilla\n1/2 taza de harina de trigo\n1/4 cucharadita de sal\n1 taza de nueces picadas (o chips de chocolate)",
+      "preparacion": "1. Precalentar el horno a 180°C (350°F). Engrasar un molde cuadrado de 20x20 cm.\n2. Derretir el chocolate y la mantequilla juntos en baño María o microondas, removiendo cada 30 segundos.\n3. Dejar ligeramente enfriar la mezcla de chocolate.\n4. Batir los huevos y el azúcar hasta que la mezcla esté pálida y espesa.\n5. Agregar el extracto de vainilla a la mezcla de huevos.\n6. Incorporar la mezcla de chocolate derretido a la mezcla de huevos y azúcar, mezclando hasta integrar.\n7. Tamizar la harina y la sal sobre la mezcla y incorporar suavemente sin sobrebatir.\n8. Fold in las nueces picadas.\n9. Verter la masa en el molde y hornear por 20-25 minutos, hasta que un palillo inserto saque unas migas húmedas pero no masa líquida.\n10. Dejar enfriar completamente antes de cortar en cuadrados."
+    },
+    {
+      "id": 6,
+      "nombre": "Galletas de Avena con Pasas",
+      "categoria": "Dulce",
+      "ingredientes": "1 taza de avena en hojuelas\n1/2 taza de harina de trigo\n1/2 cucharadita de bicarbonato de sodio\n1/4 cucharadita de sal\n1/2 taza de mantequilla ablandada\n1/3 taza de azúcar morena\n1/3 taza de azúcar blanca\n1 huevo\n1 cucharadita de extracto de vainilla\n1/2 taza de pasas\n1/4 taza de nueces picadas (opcional)",
+      "preparacion": "1. Precalentar el horno a 175°C (350°F).Forrar una charola para hornear con papel pergamino.\n2. En un tazón mediano, mezclar la avena, la harina, el bicarbonato y la sal.\n3. En otro tazón, batir la mantequilla con los azúcares morena y blanca hasta que esté esponjosa.\n4. Agregar el huevo y el extracto de vainilla, batir hasta integrar.\n5. Agregar los ingredientes secos a la mezcla de mantequilla y mezclar hasta formar una masa.\n6. Incorporar las pasas y las nueces picadas.\n7. Formar bolitas de masa de aproximadamente 2 cucharadas y colocar en la charola, dejando espacio entre ellas.\n8. Aplanar ligeramente cada bolita.\n9. Hornear por 10-12 minutos, hasta que los bordes estén dorados pero el centro aún luzca ligeramente suave.\n10. Dejar enfriar en la charola 5 minutos antes de transferir a una rejilla para enfriar completamente."
+    }
+  ]
+}

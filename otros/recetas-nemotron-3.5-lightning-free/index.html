@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recetas de Cocina - Sabores Auténticos</title>
+  <link rel="stylesheet" href="estilosIA.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar">
+    <div class="navbar-logo">Sabores Auténticos</div>
+    <ul class="navbar-links">
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#quien-mantiene">Quién mantiene</a></li>
+      <li><a href="#catálogo">Catálogo</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-content">
+      <h1>Recetas de Cocina</h1>
+      <p class="header-subtitle">Recetas tradicionales y familiares para compartir</p>
+    </div>
+  </header>
+
+  <!-- Tabs CSS-only: inputs y contenido son hermanos directos -->
+  <div class="tabs-wrapper">
+    <input type="radio" name="categoria" id="salado" class="tab-input" checked>
+    <label for="salado" class="tab-label">Salado</label>
+
+    <input type="radio" name="categoria" id="dulce" class="tab-input">
+    <label for="dulce" class="tab-label">Dulce</label>
+
+    <!-- Bloques de recetas (hermanos de los inputs) -->
+    <div class="receta-block salado" id="recetas-salado">
+      <!-- Receta 1 -->
+      <article class="receta-card">
+        <div class="receta-img">
+          <img src="imágenes/receta1.png" alt="Revuelta de Papas con cebolla">
+        </div>
+        <div class="receta-contenido">
+          <h3 class="receta-nombre">Revuelta de Papas con cebolla</h3>
+          <a href="recetarios/receta1.pdf" class="receta-link">Descargar PDF</a>
+        </div>
+      </article>
+
+      <!-- Receta 2 -->
+      <article class="receta-card">
+        <div class="receta-img">
+          <img src="imágenes/receta2.png" alt="Pollo Asado con Limón y Hierbas">
+        </div>
+        <div class="receta-contenido">
+          <h3 class="receta-nombre">Pollo Asado con Limón y Hierbas</h3>
+          <a href="recetarios/receta2.pdf" class="receta-link">Descargar PDF</a>
+        </div>
+      </article>
+
+      <!-- Receta 3 -->
+      <article class="receta-card">
+        <div class="receta-img">
+          <img src="imágenes/receta3.png" alt="Espaguetis a la Bolonesa Casera">
+        </div>
+        <div class="receta-contenido">
+          <h3 class="receta-nombre">Espaguetis a la Bolonesa Casera</h3>
+          <a href="recetarios/receta3.pdf" class="receta-link">Descargar PDF</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="receta-block dulce" id="recetas-dulce">
+      <!-- Receta 4 -->
+      <article class="receta-card">
+        <div class="receta-img">
+          <img src="imágenes/receta4.png" alt="Torta de Zanahoria con Crema de Queso">
+        </div>
+        <div class="receta-contenido">
+          <h3 class="receta-nombre">Torta de Zanahoria con Crema de Queso</h3>
+          <a href="recetarios/receta4.pdf" class="receta-link">Descargar PDF</a>
+        </div>
+      </article>
+
+      <!-- Receta 5 -->
+      <article class="receta-card">
+        <div class="receta-img">
+          <img src="imágenes/receta5.png" alt="Brownies de Chocolate Con Nueces">
+        </div>
+        <div class="receta-contenido">
+          <h3 class="receta-nombre">Brownies de Chocolate Con Nueces</h3>
+          <a href="recetarios/receta5.pdf" class="receta-link">Descargar PDF</a>
+        </div>
+      </article>
+
+      <!-- Receta 6 -->
+      <article class="receta-card">
+        <div class="receta-img">
+          <img src="imágenes/receta6.png" alt="Galletas de Avena con Pasas">
+        </div>
+        <div class="receta-contenido">
+          <h3 class="receta-nombre">Galletas de Avena con Pasas</h3>
+          <a href="recetarios/receta6.pdf" class="receta-link">Descargar PDF</a>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- Sección de Contacto (formulario) -->
+  <section class="contacto-section" id="contacto">
+    <h2>Contacto</h2>
+    <form class="contacto-form">
+      <div class="form-group">
+        <label for="nombre-contacto">Nombre</label>
+        <input type="text" id="nombre-contacto" name="nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="email-contacto">Email</label>
+        <input type="email" id="email-contacto" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="mensaje-contacto">Mensaje</label>
+        <textarea id="mensaje-contacto" name="mensaje" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn-enviar">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <!-- Sección "Quién mantiene el sitio" -->
+  <section class="quien-mantiene" id="quien-mantiene">
+    <div class="quien-mantiene-container">
+      <div class="quien-mantiene-img">
+        <img src="imágenes/receta1.png" alt="Foto del creador del sitio">
+      </div>
+      <div class="quien-mantiene-info">
+        <h3>Gonzalo Dev.</h3>
+        <p class="quien-descripcion">Desarrollador web apasionado por la cocina y la tecnología. Este sitio fue creado para compartir recetas familiares y descubrir nuevos sabores. Cada receta ha sido probada y disfrutada en casa, y ahora está lista para ser compartida con ustedes.</p>
+        <p class="quien-contacto">¿Tienes alguna pregunta o sugerencia? ¡Me encantaría saber de ti!</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Recetas de Cocina. Todos los derechos reservados.</p>
+    <p>Sitio creado con HTML semántico y CSS puro.</p>
+  </footer>
+
+</body>
+</html>
